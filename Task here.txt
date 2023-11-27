@@ -1,0 +1,17 @@
+sheet công việc của Kiệt: https://docs.google.com/spreadsheets/d/1rBqpO7mKO4v7A6nS2dUApCkfaAAgBu-NenODFBNarkY/edit?usp=drive_link
+
+
+Đây là chỗ tôi giao task cho anh em. tôi thông báo trên nhóm thì anh em chịu khó vào xem.
+giao task ngày 27/11 -> deadline hết 28
+    Tiến: Đăng nhập
+    Bin: Header (nav)
+    Kiệt: footer
+    Thy: card product
+    Hà + Phương Thy vẽ use case
+
+giao task ngày 28/11 -> deadline 30
+    Bin: side bar
+    Kiệt Thy Tiến: build database + base back end.
+    Hà Phương Thy: tải hết ảnh và tài nguyên, format tụi nó.
+
+Thứ 6 ngày 1 tụi mình báo cáo.
