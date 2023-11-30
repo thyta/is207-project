@@ -1,0 +1,55 @@
+#carouselExampleIndicators {}
+
+.single-slider {
+    padding: 0;
+}
+
+.slider-info {
+    padding: 0;
+}
+
+.slider-content {
+    margin-top: 25%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.slider-img {
+    padding: 0;
+}
+
+.btn-smore {
+    background-color: #27241F;
+    text-decoration: none;
+}
+
+.carousel-item {
+    height: 100%;
+    /* Set the height of the slide to fill the viewport */
+}
+
+
+.image-container {
+    position: relative;
+}
+
+.img-1 {
+    position: absolute;
+
+    right: 3%;
+}
+
+.img-2 {
+    position: absolute;
+    right: 3%;
+}
+
+.img-3 {
+    position: absolute;
+
+    top: 0;
+}
