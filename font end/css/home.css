@@ -1,5 +1,3 @@
-#carouselExampleIndicators {}
-
 .single-slider {
     padding: 0;
 }
@@ -28,10 +26,11 @@
 }
 
 .carousel-item {
-    height: 100%;
-    /* Set the height of the slide to fill the viewport */
 }
 
+.new-product-container {
+    padding-top: 200px;
+}
 
 .image-container {
     position: relative;
