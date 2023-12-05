@@ -8,17 +8,125 @@ li {
     list-style: none;
 }
 
-a {
+.side-bar {
+    position: absolute;
+    background-color: #fefbf4;
+    width: 33%;
+    height: 611px;
+    border: 1px solid rgb(223, 215, 215);
+    padding: 90px 80px 50px;
+    overflow: auto;
+    z-index: 6;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all linear 0.3s;
+}
+
+.side-bar-second {
+    position: absolute;
+    background-color: #fefbf4;
+    width: 33%;
+    height: 611px;
+    border: 1px solid rgb(223, 215, 215);
+    padding: 90px 80px 50px;
+    overflow: auto;
+    z-index: 5;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all linear 0.2s;
+}
+
+.side-bar-right {
+    position: absolute;
+    right: 0;
+    background-color: #fefbf4;
+    width: 33%;
+    height: 611px;
+    border: 1px solid rgb(223, 215, 215);
+    padding: 90px 80px 50px;
+    overflow: auto;
+    z-index: 8;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all linear 0.3s; 
+}
+
+.show-second {
+    transform: translateX(100%);
+    opacity: 1; 
+}
+
+.show {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.3s;
+}
+
+.right-sidebar {
+    z-index: 7;
+}
+.second-sidebar {
+    z-index: 4;
+}
+.group__link:hover {
+    border-bottom: 1px solid #414548;
+}
+.link-pc {
     text-decoration: none;
     font-size: 26px;
     color: #414548;
     font-weight: 500;
 }
 
+.link-mobile {
+    text-decoration: none;
+    font-size: 20px;
+    color: #414548;
+    font-weight: 500;
+}
+
+.btn-sample {
+    background-color: #fefbf4;
+    border: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: #414548;
+    padding: 0;
+}
+
+.close-sample {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #414548;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: transform 1s;
+}
+
+.close-sample:hover {
+    transform: rotate(180deg);
+}
+
 /* CSS HEADER PC: START */
 .header__pc {
     width: 100%;
     font-family: 'Nunito';
+    position: fixed;
 }
 
 .banner {
@@ -30,6 +138,8 @@ a {
     align-items: center;
     justify-content: center;
     font-size: 14px;
+    position: relative;
+    z-index: 100;
 }
 
 .nav {
@@ -37,14 +147,17 @@ a {
     height: 86px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #fefbf4;
+    position: relative;
+    z-index: 100;
 }
 
 .nav__list {
     list-style: none;
     display: flex;
     align-items: center;
+    padding: 0 30px;
 }
 
 .nav__logo img {
@@ -60,11 +173,10 @@ a {
 .nav__link {
     font-size: 16px;
     color: #1f1c17;
-    padding: 5px;
 }
 
 .nav__link:hover {
-    background-color: #9d9697;
+    border-bottom: 1px solid #414548;
 }
 
 .header__mobile {
@@ -72,20 +184,6 @@ a {
 }
 
 /* CSS PRODUCT: START */
-
-.product {
-    position: absolute;
-    background-color: #fefbf4;
-    width: 33%;
-    height: 611px;
-    border: 1px solid rgb(223, 215, 215);
-    padding: 90px 80px 50px;
-    overflow: auto;
-    z-index: 100;
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: all linear 0.5s;
-}
 
 .product p {
     font-weight: 600;
@@ -98,20 +196,54 @@ a {
     margin: 90px 0 60px;
 }
 
-.close__product {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    color: #414548;
-    cursor: pointer;
-}
-
-.show__product {
-    transform: translateX(0%);
-    opacity: 1;
+.skincare p {
+    font-weight: 600;
+    font-size: 16px;
+    color: #1f1c17;
+    margin-left: 32px;
 }
 
 /* CSS PRODUCT: END */
+
+/* CSS DISCOUNT: START */
+.discount p {
+    font-weight: 600;
+    font-size: 16px;
+    color: #1f1c17;
+    margin-left: 32px;
+}
+/* CSS DISCOUNT: END */
+
+/* CSS COSMETIC:START */
+.cosmetic p {
+    font-weight: 600;
+    font-size: 16px;
+    color: #1f1c17;
+    margin-left: 32px;
+}
+
+/* CSS COSMETIC:END */
+
+/* CSS SEARCH: START */
+.search__input {
+    margin-left: 32px;
+    margin-bottom: 32px;
+}
+
+.search__input p {
+    font-weight: 600;
+    font-size: 16px;
+    color: #1f1c17;
+    margin-bottom: 64px;
+}
+
+.search__suggest p {
+    font-weight: 600;
+    font-size: 16px;
+    color: #1f1c17;
+    margin-left: 32px;
+}
+/* CSS SEARCH: END */
 
 /* CSS HEADER MOBILE: START */
 @media screen and (max-width: 1023px) {
@@ -120,6 +252,7 @@ a {
         width: 100%;
         height: auto;
         font-family: 'Nunito';
+        position: fixed;
     }
 
     .header__pc {
@@ -150,7 +283,7 @@ a {
         list-style: none;
         opacity: 0;
         transform: translateX(-100%);
-        transition: all linear 0.5s;
+        transition: all linear 0.4s;
     }
 
     .nav__item {
@@ -191,10 +324,10 @@ a {
     }
 
     .open__menu:hover {
-        background-color: #ffecef;
+        background-color: #7c0719;
     }
-
-    .show__menu {
+    
+    .show {
         transform: translateX(0%);
         opacity: 1;
     }
@@ -203,40 +336,57 @@ a {
     .product__mobile {
         margin-bottom: 40px;
     }
+
     .product__mobile p {
         font-weight: 600;
         font-size: 16px;
         color: #1f1c17;
     }
+
     .product__list {
         margin-bottom: 40px;
     }
+
     .product__item {
-        margin-left: -37px;
+        margin-left: -32px;
     }
 
-    .product__link {
-        font-size: 20px;
-        font-weight: 400;
-        color: #414548;
+    .product__related--mobile {
+        display: none;
     }
 
+    .show-mobile {
+        display: inline-block;
+        overflow: hidden;
+        animation: revealText 2s ease-in, fadeIn 2s ease-in-out;
+        white-space: nowrap;
+    }
+    .show-text-mobile {
+        display: block;
+        overflow: hidden;
+        animation: revealText 2s ease-in, fadeIn 1s ease-in;
+        white-space: nowrap;
+    }
     /* CSS PRODUCT MOBILE: END */
-
 }
+
+
+/* ANIMATION */
 
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
-
     to {
         opacity: 1;
     }
 }
 
-.btn-sample {
-    background-color: #fefbf4;
-    border: none;
-    border-radius: 5px;
-}
+@keyframes revealText {
+    0% {
+      width: 40%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
