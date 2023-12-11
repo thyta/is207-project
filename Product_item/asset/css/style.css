@@ -1,0 +1,121 @@
+*{
+    font-family: 'Nunito';
+}
+.base-product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+
+.product-item-base{
+    display: flex;
+    flex-direction: row;
+    padding-right: 40px;
+    width: 50%;
+}
+.img-item-detail{
+    width: 100%;
+    
+}
+.img-product-item{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.product-summary{
+    width: 50%;
+    padding-left: 40px;
+    padding-right: 160px;
+}
+.product-link{
+    text-decoration: none;
+    color: #CCB48F;
+    font-size: 16px;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    color: #CCB48F;
+}
+.product-heading{
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: 'Vollkorn';
+}
+.product-price{
+    font-size: 20px;
+    margin-top: 16px;
+}
+.product-desc{
+    margin-top: 16px;
+    font-size: 14px;
+}
+.suit-desc{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 120px;
+    row-gap: 20px;
+    padding: 20px 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.suit-item{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+.Suit-da{
+    padding: 20px 0px;
+}
+.logo-summary-brand{
+    display: flex;
+
+}
+.logo-brand{
+    height: 100%;
+    object-fit: contain;
+    width: 6rem;
+    height: 6rem;
+    margin-right: 2rem;
+}
+.btn-background{
+    width: 100%;
+    padding: 16px;
+    border: none;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 7px;
+}
+.btn-background:hover{
+    background-color: rgb(99, 90, 90);
+}
+.btn-txt, .btn-icon{
+    font-size: 20px;
+}
+.btn-icon{
+    margin-left: 20px;
+}
+.slick-arrow{
+    position: absolute;
+    border-radius: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: rgb(0, 0, 0);
+    width: 60px;
+    height: 60px;
+}
+.slick-arrow:hover{
+}
+.slick-prev{
+    left: 0;
+}
+.slick-next{
+    margin-right: 40px ;
+    right: 0;
+}
