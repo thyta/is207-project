@@ -1,4 +1,5 @@
-*{
+
+html{
     font-family: 'Nunito';
 }
 .base-product{
@@ -90,6 +91,7 @@ a{
     background-color: black;
     color: aliceblue;
     border-radius: 7px;
+    margin-top: 28px;
 }
 .btn-background:hover{
     background-color: rgb(99, 90, 90);
@@ -119,3 +121,137 @@ a{
     margin-right: 40px ;
     right: 0;
 }
+.share-comment{
+    margin-top: 10px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+.share-comment{
+    align-items: center;
+}
+.share-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.share-link-logo{
+    margin-right: 4px;
+    width: 32px;
+    height: 32px;
+}
+.logo-share{
+    opacity: 0.7;
+    object-fit:cover;
+    width: 32px;
+    height: 32px;
+}
+.comment-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-fuel{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    background-color: rgb(255, 243, 229);
+    padding-bottom: 100px;
+}
+.img-desc-fuel{
+    width: 50%;
+}
+.img-fuel{
+    object-fit: cover;
+    width: 100%;
+}
+.txt-desc-fuel{
+    width: 50%;
+    padding: 20px 200px 50px 50px;
+}
+.clamped-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Giới hạn 3 dòng văn bản */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    width: 100%;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Vollkorn';
+    transition-duration: 1s;
+  }
+  
+  /* Ẩn nút khi đoạn văn bản đã được hiển thị toàn bộ */
+  #readMoreBtn {
+    display: none;
+  }
+  #readLessBtn {
+    display: none;
+  }
+  #readMoreBtn, #readLessBtn{
+    text-decoration: none;
+    border: none;
+    color: black;
+    background-color: #CCB48F;
+    font-size: 20px;
+    font-family: 'Vollkorn';
+    border-radius: 8px;
+    padding: 5px;
+    cursor: pointer;
+  }
+  #readMoreBtn:hover, #readLessBtn:hover{
+    text-decoration: underline;
+    text-underline-position: under;
+  }
+  .description-suit-use{
+    display: flex;
+    justify-content: space-between;
+  }
+  .suitable-use{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+    line-height: 24px;
+  }
+  .suitable-heading{
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 8px;
+  }
+  .suitable-desc{
+    padding-bottom: 8px;
+  }
+  .elements-descr{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 700px;
+  }
+  .element-descr-detail-heading{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #CCB48F;
+  }
+  .element-descr-detail{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 128px 30px 128px;
+    overflow-y: auto;
+  }
+  .element-descr-item-subheading{
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .element-descr-item{
+    margin: 10px 0 24px;
+  }
+  .element-descr-img-present{
+    width: 60%;
+  }
