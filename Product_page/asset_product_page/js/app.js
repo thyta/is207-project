@@ -1,6 +1,11 @@
 $(document).ready(function(){
     $('.product-list-slider').slick({
-        slidesToShow: 3,
+        slidesToShow: 1,
+        infinite: true,
+        speed: 300,
+ 
+        centerMode: true,
+        variableWidth: true,
         slidesToScroll: 1,
             arrows: true,
             prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",

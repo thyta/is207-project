@@ -1,0 +1,26 @@
+body{
+    background: rgb(245, 240, 230);
+    font-family: 'Nunito';
+}
+.layout{
+    padding: 60px 40px;
+}
+.info-personal, .bill {
+    background-color: white;
+    padding: 16px 20px 24px;
+    margin: 10px;
+}
+
+.info-title{
+    font-size: 16px;
+}
+.login-link, .login-link:hover{
+    color: rgb(209, 176, 93);
+}
+.input-mail{
+    outline: 0;
+}
+.e-mail-input-remind{
+    font-style: italic;
+    font-size: 14px;    
+}
